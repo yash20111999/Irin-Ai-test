@@ -1,0 +1,244 @@
+* {
+  font-family: "Roboto Serif";
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+/* Button CSS start */
+.button {
+  background: #000000;
+  border-radius: 100px;
+  height: 44px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  display: flex;
+  align-items: center;
+
+  /* Primary/Off white */
+
+  color: #ebf3f8;
+  border: none;
+  padding-inline: 20px;
+}
+
+/* Button CSS end */
+
+/* Input CSS start */
+
+.input {
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  width: 60%;
+  height: 36.12px;
+  margin-right: 25px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Input CSS end */
+
+/* Header CSS Start */
+
+.header {
+  background: #000000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  position: relative;
+  height: 64px;
+  justify-content: space-between;
+}
+
+.company-name {
+  padding: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.signup {
+  padding-inline: 20px;
+  height: 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+  background: rgb(217, 217, 217);
+  border-radius: 20px;
+  border: none;
+}
+
+.text-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Header CSS end */
+
+/* content CSS start */
+
+.content {
+  display: flex;
+  flex-direction: row;
+  padding-top: 96px;
+  padding-left: 120px;
+  padding-right: 100px;
+  gap: 40px;
+  height: 80vh;
+  background: url('./assets/Ellipse3.png') left top no-repeat, url('./assets/Ellipse4.png') left bottom no-repeat, url('./assets/Ellipse5.png') right center no-repeat;
+}
+
+.content-text {
+  font-family: "Roboto" !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+
+/* Item CSS start*/
+
+.item-container {
+  display: flex;
+  /* position: absolute; */
+  width: 90%;
+  padding: 24px;
+  /* height: 81px; */
+  gap: 12px;
+  background: #ffffff;
+  box-shadow: 0px 0px 20px rgb(116 188 82 / 28%);
+  border-radius: 20px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-container {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+
+/* Item CSS end */
+
+/* AddFrom CSS Start */
+.form-container {
+  background: #ffffff;
+  box-shadow: 0px 0px 20px rgba(116, 188, 82, 0.28);
+  border-radius: 20px;
+  padding-inline: 26px;
+  width: 35%;
+  height: 60%;
+}
+
+.field-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  gap: 38px;
+  padding-bottom: 114px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  gap: 33px;
+}
+
+/* List CSS start */
+
+.list-container {
+  background: #ffffff;
+  box-shadow: 0px 0px 20px rgba(116, 188, 82, 0.28);
+  border-radius: 20px;
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  gap: 10px;
+  height: 60%;
+}
+
+.content-header {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 24px;
+  /* or 75% */
+  padding-top: 26px;
+  padding-left: 33px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+
+.item-content {
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-inline: 40px;
+  overflow-y: scroll;
+}
+
+.load-button-container {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
