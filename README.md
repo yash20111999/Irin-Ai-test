@@ -7,9 +7,8 @@
 ### * Validation of Name and Email field is implemented.
 ### * UI is according to Design [Figma Link](https://www.figma.com/file/rvy0ITLw7omzc34y8w2DuR/test?node-id=118-2&t=4uXB1qnQmzT1U8OA-0).
 
-Irin-Ai-test/Preview ArwinAiTest.png
 
-![alt text](./Irin-Ai-test/Preview ArwinAiTest.png)
+![Preview](Preview.png)
 
 ## To run the project on Local Port
 
