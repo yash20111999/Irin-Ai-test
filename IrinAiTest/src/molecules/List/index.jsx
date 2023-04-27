@@ -1,9 +1,9 @@
-import React,{ useContext, useState,useEffect,useRef } from 'react'
+import React, { useContext, useState, useEffect, useRef } from 'react'
 import { Button, Item } from '../../atoms'
 import { DataContext } from '../../DataContext'
 
 const List = () => {
-  
+
   const { data, setActivity } = useContext(DataContext);
 
   const [visibleData, setVisibleData] = useState(data?.slice(0, 3));
@@ -12,9 +12,11 @@ const List = () => {
 
   useEffect(() => {
     setVisibleData(data?.slice(0, 3))
-  
-  }, [data])
-  
+  }, [data]);
+
+  useEffect(() => {
+    loadMoreButtonRef.current.scrollTo({ top: loadMoreButtonRef.current.scrollHeight, behavior: "smooth" });
+  }, [visibleData]);
 
   const handleLoadMoreClick = () => {
     const nextVisibleData = data?.slice(visibleData.length, visibleData.length + 3);
@@ -25,15 +27,15 @@ const List = () => {
   return (
     <div className='list-container'>
       <span className='content-header'>User Details</span>
-      <div className='item-content'>
+      <div ref={loadMoreButtonRef} className='item-content'>
         {
-          visibleData.length !== 0 ? visibleData?.map((item, index) => <Item item={item} setActivity={setActivity} index={index} />):<span className='content-text'>No Item to show.</span>
+          visibleData.length !== 0 ? visibleData?.map((item, index) => <Item item={item} setActivity={setActivity} index={index} />) : <span className='content-text'>No Item to show.</span>
         }
-
       </div>
       <div className='load-button-container'>
-        <Button ref={loadMoreButtonRef} label='Load More' onClick={handleLoadMoreClick} disable={!showMore} />
+        <Button label='Load More' onClick={handleLoadMoreClick} disable={!showMore} />
       </div>
+
     </div>
   )
 }
